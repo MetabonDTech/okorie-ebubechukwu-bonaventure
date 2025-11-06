@@ -44,7 +44,7 @@ export default function AboutPage() {
 
 					<motion.div variants={fadeIn('left', 0.3)} className="relative h-[500px]">
 						<Image
-							src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg"
+							src="/images/Boanventure_pro_pic.jpg"
 							alt="Professional photo"
 							fill
 							className="object-cover rounded-lg"
