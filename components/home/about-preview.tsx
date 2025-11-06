@@ -28,7 +28,7 @@ export function AboutPreview() {
 						className="relative h-[400px] rounded-lg overflow-hidden"
 					>
 						<Image
-							src="/images/Boanventure_pro_pic.jpg"
+							src="/images/Bonaventure_pro_pic.jpg"
 							alt="Engineer portrait"
 							fill
 							className="object-cover"
