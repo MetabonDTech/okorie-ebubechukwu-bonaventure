@@ -14,7 +14,7 @@ import { staggerContainer, fadeInScale } from '@/lib/motion';
 
 export function ProjectsPreview() {
 	// Only show the first 3 projects in the preview
-	const previewProjects = projects.slice(0, 3);
+	const previewProjects = projects.slice(0, 4);
 
 	return (
 		<section className="py-16 md:py-24 bg-muted/30">
