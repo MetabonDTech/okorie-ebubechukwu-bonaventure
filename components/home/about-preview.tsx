@@ -66,7 +66,7 @@ export function AboutPreview() {
 							<Card className="card-gradient">
 								<CardContent className="p-4">
 									<h4 className="font-semibold">Projects</h4>
-									<p className="text-sm text-muted-foreground">104+ Completed</p>
+									<p className="text-sm text-muted-foreground">54+ Completed</p>
 								</CardContent>
 							</Card>
 							<Card className="card-gradient">
