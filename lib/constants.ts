@@ -121,8 +121,8 @@ export const projects: Project[] = [
 		title: 'PropTech System',
 		description:
 			'AI-powered platform resolving agent-tenant challenges with GIS and smart property matching.',
-		image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
-		tags: ['IoT', 'Arduino', 'C++', 'Mobile App'],
+		image: '/public/images/myapati.jpg',
+		tags: ['php', 'Ajax', 'AI', 'Mobile App'],
 		link: '#',
 		repo: '#',
 	},
@@ -130,8 +130,8 @@ export const projects: Project[] = [
 		title: 'Lottery Website (Iplanet):',
 		description:
 			'Designed and developed a dynamic lottery management system with secure payment integration and live draws.',
-		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
-		tags: ['MATLAB', 'Python', 'FEA', 'Structural Engineering'],
+		image: '/public/images/iplanet.jpg',
+		tags: ['Typescript', 'React.Js', 'APIs', 'Node.Js],
 		link: '#',
 		repo: '#',
 	},
@@ -168,7 +168,7 @@ export const projects: Project[] = [
 			'Created a blockchain-integrated web app for digital asset creation and marketplace listing.',
 		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
 		tags: ['Data Analysis', 'IoT', 'Renewable Energy', 'Visualization'],
-		link: '#',
+		link: 'https://www.myschoolportal.net',
 		repo: '#',
 	},
 ];
