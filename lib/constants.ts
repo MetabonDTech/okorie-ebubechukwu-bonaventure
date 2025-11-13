@@ -167,7 +167,7 @@ export const projects: Project[] = [
 		description:
 			'Created a blockchain-integrated web app for digital asset creation and marketplace listing.',
 		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
-		tags: ['Data Analysis', 'IoT', 'Renewable Energy', 'Visualization'],
+		tags: ['CSS3', 'HTML5', 'PHP', 'Ajax'],
 		link: 'https://www.myschoolportal.net',
 		repo: '#',
 	},
