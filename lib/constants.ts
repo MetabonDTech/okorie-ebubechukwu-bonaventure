@@ -121,7 +121,7 @@ export const projects: Project[] = [
 		title: 'PropTech System',
 		description:
 			'AI-powered platform resolving agent-tenant challenges with GIS and smart property matching.',
-		image: '/public/images/myapati.jpg',
+		image: '/images/myapati.jpg',
 		tags: ['php', 'Ajax', 'AI', 'Mobile App'],
 		link: '#',
 		repo: '#',
@@ -130,7 +130,7 @@ export const projects: Project[] = [
 		title: 'Lottery Website (Iplanet):',
 		description:
 			'Designed and developed a dynamic lottery management system with secure payment integration and live draws.',
-		image: '/public/images/Iplanet.jpg',
+		image: '/images/Iplanet.jpg',
 		tags: ['Typescript', 'React.Js', 'APIs', 'Node.Js'],
 		repo: '#',
 	},
@@ -138,7 +138,7 @@ export const projects: Project[] = [
 		title: 'NFT Minting Platform',
 		description:
 			'Created a blockchain-integrated web app for digital asset creation, marketplace listing and Auctioning.',
-		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
+		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
 		tags: ['Data Analysis', 'IoT', 'Renewable Energy', 'Visualization'],
 		link: '#',
 		repo: '#',
@@ -147,7 +147,7 @@ export const projects: Project[] = [
 		title: 'Sune-x Contruction Company Portfolio',
 		description:
 			'Developed a user-friendly website for Sune-x Constructions, showcasing their services, past projects,and providing easy contact options for clients.',
-		image: '/public/images/Sune-x.png',
+		image: '/images/Sune-x.png',
 		tags: ['HTML5', 'CSS3', 'AJAX', 'PHP'],
 		link: 'https://www.sunexcontruction.site',
 		repo: '#',
