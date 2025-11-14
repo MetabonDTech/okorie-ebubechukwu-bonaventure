@@ -3,12 +3,12 @@ export const runtime = "nodejs";
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-// Initialize Resend with your API key from environment variable
+// Initialize Resend with API key from environment variable
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   try {
-    const { name, email, message } = await req.json();
+    const { name, email, subject, message } = await req.json();
 
     // --- Email to admin ---
     const adminHtml = `
@@ -18,6 +18,7 @@ export async function POST(req: Request) {
         <hr style="margin: 15px 0;">
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Subject:</strong> ${subject}</p>
         <p><strong>Message:</strong></p>
         <p style="background:#f6f6f6; padding:12px; border-radius:6px;">${message}</p>
         <hr style="margin: 15px 0;">
@@ -34,23 +35,23 @@ export async function POST(req: Request) {
         <hr style="margin: 15px 0;">
         <p><strong>Your Message:</strong></p>
         <p style="background:#f6f6f6; padding:12px; border-radius:6px;">${message}</p>
-        <p style="margin-top:20px;">Best regards,<br/>Bonaventures Team</p>
+        <p style="margin-top:20px;">Best regards,<br/>Boanventures Team</p>
       </div>
     `;
 
-    // --- Send email to admin ---
+    // Send email to admin
     await resend.emails.send({
-      from: "officialbonaventure@gmail.com",
+      from: "Boanventures <officialbonaventure@gmail.com>",
       to: process.env.RECEIVING_EMAIL!,
-      subject: `New message from ${name}`,
+      subject: `New message from ${name} - ${subject}`,
       html: adminHtml,
     });
 
-    // --- Send auto-reply to user ---
+    // Send auto-reply to user
     await resend.emails.send({
-      from: "officialbonaventure@gmail.com",
+      from: "Boanventures <officialbonaventure@gmail.com>",
       to: email,
-      subject: `Thank you for contacting Okorie Ebubechukwu Bonaventure!`,
+      subject: "Thank you for contacting Boanventures!",
       html: userHtml,
     });
 

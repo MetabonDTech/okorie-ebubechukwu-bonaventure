@@ -76,7 +76,7 @@ export default function ContactPage() {
                     </div>
                     <div className="flex items-center">
                       <Mail className="h-5 w-5 text-primary mr-3" />
-                      <p className="text-muted-foreground">okoriebonaventure1@gmail.com</p>
+                      <p className="text-muted-foreground">officialbonaventure@gmail.com</p>
                     </div>
                     <div className="flex items-center">
                       <MapPin className="h-5 w-5 text-primary mr-3" />
