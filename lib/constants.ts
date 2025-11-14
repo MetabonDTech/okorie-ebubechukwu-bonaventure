@@ -130,7 +130,7 @@ export const projects: Project[] = [
 		title: 'Lottery Website (Iplanet):',
 		description:
 			'Designed and developed a dynamic lottery management system with secure payment integration and live draws.',
-		image: '/public/images/iplanet.jpg',
+		image: '/public/images/Iplanet.jpg',
 		tags: ['Typescript', 'React.Js', 'APIs', 'Node.Js],
 		link: '#',
 		repo: '#',
@@ -138,19 +138,19 @@ export const projects: Project[] = [
 	{
 		title: 'NFT Minting Platform',
 		description:
-			'Created a blockchain-integrated web app for digital asset creation and marketplace listing.',
+			'Created a blockchain-integrated web app for digital asset creation, marketplace listing and Auctioning.',
 		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
 		tags: ['Data Analysis', 'IoT', 'Renewable Energy', 'Visualization'],
 		link: '#',
 		repo: '#',
 	},
 	{
-		title: 'Bank Application',
+		title: 'Sune-x Contruction Company Portfolio',
 		description:
-			'Developed a full-stack banking system with account creation, fund transfer, and admin control modules.',
-		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
-		tags: ['MATLAB', 'Python', 'FEA', 'Structural Engineering'],
-		link: '#',
+			'Developed a user-friendly website for Sune-x Constructions, showcasing their services, past projects,and providing easy contact options for clients.',
+		image: '/public/images/Sune-x.png',
+		tags: ['HTML5', 'CSS3', 'AJAX', 'PHP'],
+		link: 'https://www.sunexcontruction.site',
 		repo: '#',
 	},
 	{
