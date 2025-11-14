@@ -31,13 +31,13 @@ export function ContactPreview() {
 
       if (!res.ok) throw new Error('Failed to send');
 
-      toast.success('Message sent successfully! ✅', {
+      toast.success('Message sent successfully!', {
         style: { background: '#0ea5e9', color: '#fff', fontWeight: 'bold' },
       });
 
       setFormState({ name: '', email: '', message: '' });
     } catch (err) {
-      toast.error('Failed to send message. Please try again. ❌', {
+      toast.error('Failed to send message. Please try again.', {
         style: { background: '#ef4444', color: '#fff', fontWeight: 'bold' },
       });
     } finally {
