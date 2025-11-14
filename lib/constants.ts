@@ -121,7 +121,7 @@ export const projects: Project[] = [
 		title: 'PropTech System',
 		description:
 			'AI-powered platform resolving agent-tenant challenges with GIS and smart property matching.',
-		image: '/myapati.jpg',
+		image: '/images/myapati.jpg',
 		tags: ['php', 'Ajax', 'AI', 'Mobile App'],
 		link: '#',
 		repo: '#',
@@ -130,7 +130,7 @@ export const projects: Project[] = [
 		title: 'Lottery Website (Iplanet):',
 		description:
 			'Designed and developed a dynamic lottery management system with secure payment integration and live draws.',
-		image: '../images/Iplanet.jpg',
+		image: '/images/Iplanet.jpg',
 		tags: ['Typescript', 'React.Js', 'APIs', 'Node.Js'],
 		repo: '#',
 	},
