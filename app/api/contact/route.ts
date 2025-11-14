@@ -40,7 +40,7 @@ export async function POST(req: Request) {
 
     // --- Send email to admin ---
     await resend.emails.send({
-      from: "Okorie Ebubechukwu Bonaventure <okoriebonaventure1@gmail.com>",
+      from: "okoriebonaventure1@gmail.com",
       to: process.env.RECEIVING_EMAIL!,
       subject: `New message from ${name}`,
       html: adminHtml,
@@ -48,7 +48,7 @@ export async function POST(req: Request) {
 
     // --- Send auto-reply to user ---
     await resend.emails.send({
-      from: "Okorie Ebubechukwu Bonaventure <okoriebonaventure1@gmail.com>",
+      from: "okoriebonaventure1@gmail.com",
       to: email,
       subject: `Thank you for contacting Okorie Ebubechukwu Bonaventure!`,
       html: userHtml,
