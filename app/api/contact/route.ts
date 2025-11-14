@@ -3,13 +3,14 @@ export const runtime = "nodejs";
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
+// Initialize Resend with your API key from environment variable
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   try {
     const { name, email, message } = await req.json();
 
-    // --- Admin Email ---
+    // --- Email to admin ---
     const adminHtml = `
       <div style="font-family: Arial, sans-serif; padding: 20px;">
         <h2 style="color: #111827;">📩 New Contact Message</h2>
@@ -24,7 +25,7 @@ export async function POST(req: Request) {
       </div>
     `;
 
-    // --- Auto-reply Email to User ---
+    // --- Auto-reply email to user ---
     const userHtml = `
       <div style="font-family: Arial, sans-serif; padding: 20px;">
         <h2 style="color: #111827;">Thank You for Contacting Us!</h2>
@@ -37,19 +38,19 @@ export async function POST(req: Request) {
       </div>
     `;
 
-    // --- Send Admin Email ---
+    // --- Send email to admin ---
     await resend.emails.send({
-      from: "Boanventures <demo@resend.dev>",
+      from: "Okorie Ebubechukwu Bonaventure <okoriebonaventure1@gmail.com>",
       to: process.env.RECEIVING_EMAIL!,
       subject: `New message from ${name}`,
       html: adminHtml,
     });
 
-    // --- Send Auto-reply Email ---
+    // --- Send auto-reply to user ---
     await resend.emails.send({
-      from: "Boanventures <demo@resend.dev>",
+      from: "Okorie Ebubechukwu Bonaventure <okoriebonaventure1@gmail.com>",
       to: email,
-      subject: `Thank you for contacting Boanventures!`,
+      subject: `Thank you for contacting Okorie Ebubechukwu Bonaventure!`,
       html: userHtml,
     });
 
