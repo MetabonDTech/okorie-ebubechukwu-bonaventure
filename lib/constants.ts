@@ -131,8 +131,7 @@ export const projects: Project[] = [
 		description:
 			'Designed and developed a dynamic lottery management system with secure payment integration and live draws.',
 		image: '/public/images/Iplanet.jpg',
-		tags: ['Typescript', 'React.Js', 'APIs', 'Node.Js],
-		link: '#',
+		tags: ['Typescript', 'React.Js', 'APIs', 'Node.Js'],
 		repo: '#',
 	},
 	{
