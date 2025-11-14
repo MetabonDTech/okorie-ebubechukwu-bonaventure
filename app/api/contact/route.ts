@@ -38,7 +38,13 @@ export async function POST(req: Request) {
         <p style="margin-top:20px;">Best regards,<br/>Boanventures Team</p>
       </div>
     `;
-
+    if (!process.env.RESEND_API_KEY) {
+        console.error("❌ Missing RESEND_API_KEY");
+        return NextResponse.json(
+            { error: "Server error: Missing API key" },
+            { status: 500 }
+        );
+        }
     // Send email to admin
     await resend.emails.send({
       from: "Boanventures <officialbonaventure@gmail.com>",
