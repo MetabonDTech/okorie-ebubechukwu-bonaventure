@@ -130,7 +130,7 @@ export const projects: Project[] = [
 		title: 'Lottery Website (Iplanet):',
 		description:
 			'Designed and developed a dynamic lottery management system with secure payment integration and live draws.',
-		image: '/Iplanet.jpg',
+		image: '../images/Iplanet.jpg',
 		tags: ['Typescript', 'React.Js', 'APIs', 'Node.Js'],
 		repo: '#',
 	},
@@ -147,7 +147,7 @@ export const projects: Project[] = [
 		title: 'Sune-x Contruction Company Portfolio',
 		description:
 			'Developed a user-friendly website for Sune-x Constructions, showcasing their services, past projects,and providing easy contact options for clients.',
-		image: '/Sune-x.png',
+		image: '/images/Sune-x.png',
 		tags: ['HTML5', 'CSS3', 'AJAX', 'PHP'],
 		link: 'https://www.sunexcontruction.site',
 		repo: '#',
