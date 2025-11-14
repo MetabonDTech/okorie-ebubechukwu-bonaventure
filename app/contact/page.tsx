@@ -37,11 +37,11 @@ export default function ContactPage() {
 
       if (!res.ok) throw new Error('Failed to send message');
 
-      toast.success('Message sent successfully! ✅');
+      toast.success('Message sent successfully!');
       setFormState({ name: '', email: '', subject: '', message: '' });
     } catch (err) {
       console.error(err);
-      toast.error('Failed to send message. ❌');
+      toast.error('Failed to send message.');
     } finally {
       setLoading(false);
     }
