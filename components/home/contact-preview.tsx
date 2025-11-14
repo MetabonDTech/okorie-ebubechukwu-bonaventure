@@ -24,12 +24,25 @@ export function ContactPreview() {
 		});
 	};
 
-	const handleSubmit = (e: React.FormEvent) => {
+		const handleSubmit = async (e: React.FormEvent) => {
 		e.preventDefault();
-		// Form submission would be handled here
-		alert('Form submitted! This is a demo - no actual email is sent.');
-		setFormState({ name: '', email: '', message: '' });
+
+		try {
+			const res = await fetch('/api/contact', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify(formState),
+			});
+
+			if (!res.ok) throw new Error('Failed to send');
+
+			alert('Message sent successfully!');
+			setFormState({ name: '', email: '', message: '' });
+		} catch (err) {
+			alert('Something went wrong. Try again later.');
+		}
 	};
+
 
 	return (
 		<section className="py-16 md:py-24 bg-muted/30">
