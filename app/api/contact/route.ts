@@ -34,13 +34,13 @@ export async function POST(req: Request) {
         <hr style="margin: 15px 0;">
         <p><strong>Your Message:</strong></p>
         <p style="background:#f6f6f6; padding:12px; border-radius:6px;">${message}</p>
-        <p style="margin-top:20px;">Best regards,<br/>Boanventures Team</p>
+        <p style="margin-top:20px;">Best regards,<br/>Bonaventures Team</p>
       </div>
     `;
 
     // --- Send email to admin ---
     await resend.emails.send({
-      from: "okoriebonaventure1@gmail.com",
+      from: "officialbonaventure@gmail.com",
       to: process.env.RECEIVING_EMAIL!,
       subject: `New message from ${name}`,
       html: adminHtml,
@@ -48,7 +48,7 @@ export async function POST(req: Request) {
 
     // --- Send auto-reply to user ---
     await resend.emails.send({
-      from: "okoriebonaventure1@gmail.com",
+      from: "officialbonaventure@gmail.com",
       to: email,
       subject: `Thank you for contacting Okorie Ebubechukwu Bonaventure!`,
       html: userHtml,

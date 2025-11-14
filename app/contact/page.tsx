@@ -22,9 +22,7 @@ export default function ContactPage() {
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormState({ ...formState, [e.target.name]: e.target.value });
-  };
+  ) => setFormState({ ...formState, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -39,16 +37,11 @@ export default function ContactPage() {
 
       if (!res.ok) throw new Error('Failed to send message');
 
-      toast.success('Message sent successfully! ✅', {
-        style: { background: '#0ea5e9', color: '#fff', fontWeight: 'bold' },
-      });
-
+      toast.success('Message sent successfully! ✅');
       setFormState({ name: '', email: '', subject: '', message: '' });
     } catch (err) {
       console.error(err);
-      toast.error('Failed to send message. Please try again. ❌', {
-        style: { background: '#ef4444', color: '#fff', fontWeight: 'bold' },
-      });
+      toast.error('Failed to send message. ❌');
     } finally {
       setLoading(false);
     }
